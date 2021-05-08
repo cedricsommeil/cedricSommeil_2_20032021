@@ -1,0 +1,743 @@
+/*les régles non spécifiques avant les régles spécifiques*/
+/********************Sur Desktop**************************/
+body{
+   font-family: 'Raleway', sans-serif;   /*police d'écriture Raleway*/
+   margin: 0;
+   padding: 0;
+}
+*{
+   box-sizing: border-box;/*permet généralement 
+                           de simplifier 
+                           la dimensionnement des éléments*/
+ }
+/* Header , en tête de l'intégration de la maquette , DESKTOP */
+.container{
+    width: 93%;            
+    margin: 0px auto; /* pour ne pas prendre 100% de la page par défaut , margin pour centré les éléments
+                         a condition qu'il soit de type bloc et la largeur défini*/      
+}                 
+.logo{
+    flex-basis: 65%;/* il donne une valeur a un élément
+                       dans le cas d'un axe horizontal ou vertical
+                       en fonction du flex direction 
+                       on va priviligié sont utilisation 
+                       et il écrasera le width et le height */           
+}
+.logo img{
+    width: 110px;
+}
+nav{ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -14px;
+    margin-right: 41px;
+}
+nav a{
+    padding: 48px  0px; 
+    text-decoration: none; 
+    color: grey;
+    font-size: 20px;
+}
+.sinscrire{
+    color: #0065FC;
+    padding-right: 0;
+    font-weight: bold;
+}
+nav a:hover{
+    color:#0065FC;
+}
+.hebergements:hover{
+    border-top: 2px solid #0065FC;
+}
+.activites:hover{
+    border-top: 2px solid #0065FC;   
+}
+                                        /*form*/
+
+h1{
+    font-size: 20px;
+    margin: 30px 0 0; /*30px de marge extérieur top et le reste est nul...*/
+}
+h1 + p{
+    margin-top: 10px; /* css avancé , P du meme niveau et qui suit directement le h1*/
+}
+#form{
+    /*ceci est la place de la recherche*/
+    margin-top: 33px;
+}
+input{
+    padding: 17px;
+    border:1px solid #dddddd;
+    outline: none;/*pour enlever ce qui 
+                  apparait lorsqu'on clique dessus, tel un auto-focus*/
+}
+input::placeholder{
+    color: #000;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+input[type=submit]{
+    color: #fff;
+    background-color: #0051F8;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    margin-left: -5px;
+    border: none;
+}
+button{
+    display: none;
+}
+.fa-map-marker-alt{
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    width: 46px;
+    float: left;
+}
+                                    /*  filtre  */
+#area-filters{
+    width: 75%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 29px;
+}
+#area-filters h3{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-inline-end: 9px;
+    margin-right: 60px;
+}
+#area-filters .fas{
+    border-radius: 50%;
+    color: #0065FC;
+}
+.filter{
+    display: inline-block!important;
+    margin-top: 15px;
+    margin-right: 80px;
+    padding-right: 16px;
+    height: 42px;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+}
+.wrapper-icon{
+    height: 40px;
+    display: inline-block;
+    width: 42px;
+    background-color: #DCEBFF;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+}
+.filtre-text{
+    display: inline-block;           
+    padding-left: 9px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.fa-info{
+    font-size: 12px;
+    padding: 5px 8px;
+    margin-right: 14px ;
+    color: #0065FC;
+    border: 1px solid #D4EAFF;
+    border-radius: 50%;
+}
+.marge-info{
+    display: inline;
+}
+.fa-money-bill-wave:hover{
+    color: green!important;
+}
+.fa-child:hover{
+    color: orange!important;
+}
+.fa-heart:hover{
+    color: red!important;
+}
+.fa-dog:hover{
+    color: rgb(197, 107, 43)!important;
+}
+.filtre-text:hover{
+    color: #0065FC;
+}
+                                            /* hebergements */
+
+#hebergement{
+    display: flex; /* pour que la partie aside puisse être à côté */   
+}
+#hebergement section h2{
+    padding-left: 23px;
+}
+#hebergement h2{
+    font-size: 22px;
+    margin: 20px 0;
+    padding-left: 4px;
+}
+#hebergement > section > a{
+    font-weight: bold;
+    padding-left: 22px;
+}
+#hebergement h4 , #hebergement p{
+    color: #000;
+    padding: 5px;
+    padding-left: 15px;
+    margin: 0;
+}
+#hebergement section,aside{
+    padding: 12px 20px 50px 17px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+}
+#hebergement section{
+    margin-top: 48px;
+    margin-right: 41px;
+    width: 61%;
+}
+#hebergement ul{
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+#hebergement ul > li{
+    margin-bottom: 34px;
+    padding:5px;
+    border-radius: 20px;
+    width: 30%;
+    background-color: #FFF;
+}
+#hebergement *{
+    margin: -4;
+}
+#hebergement p > span{
+    font-weight: bold;
+}
+#hebergement img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 176px;
+    padding-bottom: 6px;
+    object-fit: cover;
+}
+.stars{
+    padding: 10px 0 5px 5px;
+    color: #0065FC;
+    padding-left: 15px;
+    padding-bottom: 9px;
+}
+.starGrey{
+    color: #D2D0D4!important;
+}
+.afficher:hover{ /*c'est le bouton qui permet plus d'information, et il s'affiche en bleu lorsque 
+    le curseur est dessus avec la propriété hover*/
+    color: #0065FC;
+}
+                                /*Partie Aside les plus populaires */
+
+aside .stars{
+    margin-top: 38%!important;
+}
+aside .coeur{
+    margin-top: 72px!important;
+}
+aside{
+    margin-top: 47px;
+    margin-left: 25px;
+    width: 34%;
+    padding-bottom: 0;
+}
+aside img{
+    border-radius: 20px 0 0 20px!important;
+    width: 38%!important;
+    object-fit: cover;
+    height: 100%;
+}
+aside img + div{
+    padding: 8px;
+}
+aside > div{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;   /*ya de l'espace entre eux*/
+}
+aside ul{
+    display: flex;
+    flex-direction: column;  /* organisé sur colonne*/
+    width: 100%;
+    justify-content: space-between;
+}
+aside li{
+    width: 100%!important;
+    height: 180px;
+}
+aside li a {
+    display: flex;
+}
+aside li a > div {height: 100%;
+}
+.fa-chart-line{
+    font-size: 20px;
+    padding-top: 10px;
+    margin-top: 10px!important;
+}
+.populaires h2{
+     width: 85%;
+}
+.populaires{  /*le parent de h2 qu'il prenne une largeur de 100% de manière 
+                a que sont enfant h2 puisse prendre 
+                toute la place possible et ne pas ce retrouver sur deux lignes ou 3*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    vertical-align:middle;
+}
+
+                                /*Section activites à Marseille*/
+
+#activites{
+    margin: 80px 0 0;
+}
+#activites h2{
+    margin-bottom:-8px;
+}
+#activites > div{
+    display: flex;
+    justify-content: space-between;
+}
+#activites > div > figure , #activites > div > div{
+    width: 30%;
+}
+#activites > div > figure:first-child{
+    margin-left: 0!important;
+}
+#activites> div > figure img{
+    height: 553px;
+}
+.grandePhoto{
+    height: 215px;
+}
+#activites figure {  
+    border-radius: 40px;
+    box-shadow: 2px 6px 5px #f0f0f0;
+}
+#activites img{
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    padding-top: 20px;
+    object-fit: cover; /*pour rendre les images claires */
+}
+figcaption{
+    padding:34px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    padding-left: 25px;/* les légendes en dessous des images*/
+    padding-top: 20px;
+}
+
+/********** Footer, le pied de page ************/
+#footer{
+    margin-top: 30px;
+    background-color: #F2F2F2;
+    display: flex;       
+}
+#footer div{
+      flex:1;/* on optimise en mettant qu'une seule div , sans répéter cette opération
+             plusieurs fois on cible avec footer div pour englober toutes les div*/
+     
+}
+#footer > .a > ul {
+    padding-left: 67px;
+}
+#footer > .c > ul {
+    margin-right: 10px;
+}
+h3{ 
+    font-weight: bold; /* couleur noir pour notre titre de categorie 3 A propos , Nos hébergements , Assistance */
+}
+h3:hover{
+    color: #0065FC;/*stylisé les titres de type h3 du footer*/
+}
+ul li{
+   list-style-type: none; /*propriétés qui sert à retirer les puces devant les éléments*/
+}
+a{  
+   color: #000;
+   text-decoration: none;
+   text-decoration-line: none;/* aucune ligne ne décore le texte*/
+}
+
+
+
+@media screen and ( max-width: 1703px){
+.logo{
+    flex-basis: 28%;
+}
+#filtre{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+#area-filters{
+    width: 100%;
+}
+#area-filters h3{
+    margin-right: 10px;
+}
+figcaption{
+    padding: 29px;
+}
+}  
+@media screen and (max-width: 1288px){
+nav{
+  margin-right: 0;
+}  
+nav a {
+  padding: 40px 0;
+}
+h1+p{
+   margin-top: 15px;
+}
+#form{  
+  
+    margin-top: 40px;
+}
+#area-filters > div {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+ }
+#activites img{
+    padding-top: 51px;
+}
+figcaption{
+    padding:24px;
+}
+}
+@media screen and (max-width: 1024px){
+.logo{
+    flex-basis: 0;
+}    
+#form {
+   margin-left: 0;
+}
+#area-filters{
+    width: 75%;
+    display: block;
+}
+#filter{
+   margin-left: 0;
+}
+#hebergement section{
+    margin-right: 41px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white!important;
+}
+#hebergement > section > a {
+    padding-left: 18px;
+} 
+#hebergement section h2{
+    padding-left: 6px;
+}
+#hebergement section,aside{
+    padding: 12px 28px 30px 17px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+#hebergement{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+#hebergement img{
+    height: 289px;
+}
+#hebergement ul {
+    flex-direction: column;
+}
+#hebergement ul > li {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 10px 10px 15px #f0f0f0;
+}
+aside{
+    margin-left: 0;
+    width: 100%;
+}
+aside li{
+    width: 100%;
+    height: 294px ;
+}
+aside img + div{
+    padding-top:3%;
+}
+aside .stars{
+    margin-top: 83%!important;
+}
+aside .coeur{
+    margin-top: 56%!important;
+}
+#activites > div > figure { 
+    width: 100%;
+    margin-bottom: 40px;
+}
+#activites > div > div{
+  width: 100%;
+}
+#activites figure{
+margin: 0 0 40px;
+box-shadow: 0 0 15px 17px #f0f0f0;
+}
+#activites > div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 17px;
+}
+#activites img{
+   padding-top: 0; 
+   height: 300px;
+   margin: 0 0 20px;
+}
+#activites> div> figure img{
+        height: 300px;
+}
+#activites h2{
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+figcaption{
+    padding: 0px 10px 24px 25px;
+}
+#footer{
+    display: flex;
+}
+}
+@media screen and (max-width: 767px){
+.container{
+    width: 100%;
+}
+.logo{
+    padding-left: 8px;
+}
+nav{   
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px;                     
+  padding: 0px;
+  list-style-type: none; 
+}
+nav a{
+   flex-basis: 50%;
+}
+nav a{
+   display: inline-block; 
+   font-size: 1.3em;
+   padding: 40px 0px; 
+   text-decoration: none;  
+}
+h1{
+    font-size: 20px;
+    padding-left: 20px;
+}
+h1+p{
+     margin-top: 15px;
+     padding-left: 21px;
+}
+#area-filters{
+    width: 365px;
+}
+#filtre h3{
+    font-size: 17px;
+}
+#filtre a{
+    font-size: 17px;
+}
+#filtre ul{
+    width: 100%;
+    display: block;
+}
+#filtre > ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: flex-start;
+}
+#filtre+p{
+    margin-bottom: 25px;
+}
+#filtre{
+    display: flex;
+    flex-direction: column;
+}
+#filtre > ul > li{
+    margin-bottom: 15px;
+}
+#form{
+
+    margin-top: 31px;
+    padding-left: 14px;
+}
+.fa-search{
+    color: #FFF;
+    font-size: 15px;
+   
+}
+button{
+    color: #FFF;
+    background-color: #0065FC;
+    display: inline-block;
+    width: 51px;
+    padding: 18px;
+    border-radius: 27%;
+    margin-left: -20px;
+    border: none;/*pour enlever la bordure noir*/
+}
+input[type=search]{
+    width: 70%;
+}
+input[type=submit]{
+    display: none;
+
+}
+.area-filters{
+    padding-bottom: 22px;
+}
+#area-filters h3{
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+#area-filters > div{
+    margin-left: 16px;
+    margin-right: 0;
+}
+.fa-info{
+    font-size: 12px;
+    padding: 5px 8px;
+    margin-right: 14px ;
+    margin-left: 19px;
+    color: #0065FC;
+    border: 1px solid #D4EAFF;
+    border-radius: 50%;
+    display: inline-block;
+}
+.icon-info{
+    display: inline-block;
+    float: left;
+    height: 33px;
+}
+.marge-info{
+    display: inline;
+}
+.sinscrire{
+    order: 2;
+    text-align: right;
+    padding-right: 10px;
+}
+.hebergements{
+    order: 3;
+    text-align: center;
+    border-bottom: 2px solid #0065FC;
+}
+.hebergements:hover{
+    display: none;
+}
+.activites:hover{
+    display: none;   
+}
+.activites{
+    order:4;
+    text-align: center;
+}
+#hebergement{
+    padding-top: 10px;
+}
+#hebergement img{
+    height: 168px;
+}
+#hebergement section h2{
+    padding-left: 9px;
+    margin-top: 0;
+}
+#hebergement section,aside{
+    padding: 14px 16px 4px 14px;
+    border-radius: 0;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+#hebergement ul > li {
+    margin-bottom: 16px;
+}
+#hebergement > section > a {
+    padding-left: 16px;
+}
+aside .stars {
+    margin-top: 24%!important;
+}
+aside .coeur {
+    margin-top: 26%!important;
+}
+aside li {
+    height: 174px;
+}
+#activites {
+    margin:0;
+}
+#activites img{
+    height: 225px;
+    border-radius: 23px 26px 0 0;
+}
+#activites > div{
+    margin-right: 20px;
+}
+#activites>div>figure img{
+    height: 225px;
+}
+#activites>div>figure{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#activites h2{
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-top: 46px ;
+}
+figcaption{
+    padding: 2px 10px 21px 25px;
+}
+#footer{
+    display: flex;
+    flex-direction: column; 
+}
+#footer> .a> ul{
+    padding-left: 29px;
+}
+#footer> .b> ul{
+   padding-left: 29px;
+}
+#footer> .c> ul{
+   padding-left: 29px;
+}
+}
+
+
+ 
+
+
+
+
+
+
+
+
