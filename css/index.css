@@ -167,7 +167,7 @@ button{
                                             /* hebergements */
 
 #hebergement{
-    display: flex; /* pour que la partie aside puisse être à côté */   
+    display: flex; /*pour que la partie aside puisse être à côté */   
 }
 #hebergement section h2{
     padding-left: 23px;
@@ -268,7 +268,7 @@ aside > div{
 }
 aside ul{
     display: flex;
-    flex-direction: column;  /* organisé sur colonne*/
+    flex-direction: column;  /*organisé sur colonne*/
     width: 100%;
     justify-content: space-between;
 }
@@ -350,7 +350,6 @@ figcaption{
 #footer div{
       flex:1;/* on optimise en mettant qu'une seule div , sans répéter cette opération
              plusieurs fois on cible avec footer div pour englober toutes les div*/
-     
 }
 #footer > .a > ul {
     padding-left: 67px;
@@ -372,8 +371,6 @@ a{
    text-decoration: none;
    text-decoration-line: none;/* aucune ligne ne décore le texte*/
 }
-
-
 
 @media screen and ( max-width: 1703px){
 .logo{
