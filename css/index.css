@@ -495,7 +495,7 @@ aside .coeur{
 }
 #activites figure{
 margin: 0 0 40px;
-box-shadow: 0 0 15px 17px #f0f0f0;
+box-shadow: 0 0 7px 4px #f0f0f0;
 }
 #activites > div{
     display: flex;
@@ -585,14 +585,12 @@ h1+p{
     margin-bottom: 15px;
 }
 #form{
-
     margin-top: 31px;
     padding-left: 14px;
 }
 .fa-search{
     color: #FFF;
     font-size: 15px;
-   
 }
 button{
     color: #FFF;
@@ -609,7 +607,6 @@ input[type=search]{
 }
 input[type=submit]{
     display: none;
-
 }
 .area-filters{
     padding-bottom: 22px;
