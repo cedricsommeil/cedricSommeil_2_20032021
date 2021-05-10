@@ -240,26 +240,22 @@ button{
 }
                                 /*Partie Aside les plus populaires */
 
-aside .stars{
-    margin-top: 38%!important;
+.populaires{  /*le parent de h2 qu'il prenne une largeur de 100% de manière 
+                a que sont enfant h2 puisse prendre 
+                toute la place possible et ne pas ce retrouver sur deux lignes ou 3*/
+display: flex;
+justify-content: space-between;
+width: 100%;
+vertical-align:middle;
 }
-aside .coeur{
-    margin-top: 72px!important;
+.populaires h2{
+    width: 85%;
 }
 aside{
     margin-top: 47px;
     margin-left: 25px;
     width: 34%;
     padding-bottom: 0;
-}
-aside img{
-    border-radius: 20px 0 0 20px!important;
-    width: 38%!important;
-    object-fit: cover;
-    height: 100%;
-}
-aside img + div{
-    padding: 8px;
 }
 aside > div{
     width: 100px;
@@ -272,6 +268,12 @@ aside ul{
     width: 100%;
     justify-content: space-between;
 }
+aside img{
+    border-radius: 20px 0 0 20px!important;
+    width: 38%!important;
+    object-fit: cover;
+    height: 100%;
+}
 aside li{
     width: 100%!important;
     height: 180px;
@@ -281,23 +283,20 @@ aside li a {
 }
 aside li a > div {height: 100%;
 }
+aside img + div{
+    padding: 8px;
+}
 .fa-chart-line{
     font-size: 20px;
     padding-top: 10px;
     margin-top: 10px!important;
 }
-.populaires h2{
-     width: 85%;
+aside .stars{
+    margin-top: 38%!important;
 }
-.populaires{  /*le parent de h2 qu'il prenne une largeur de 100% de manière 
-                a que sont enfant h2 puisse prendre 
-                toute la place possible et ne pas ce retrouver sur deux lignes ou 3*/
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    vertical-align:middle;
+aside .coeur{
+    margin-top: 72px!important;
 }
-
                                 /*Section activites à Marseille*/
 
 #activites{
