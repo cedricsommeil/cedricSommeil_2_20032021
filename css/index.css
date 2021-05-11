@@ -316,7 +316,7 @@ aside .coeur{
     margin-left: 0!important;
 }
 #activites> div > figure img{
-    height: 553px;
+    height: 581px;
 }
 .grandePhoto{
     height: 215px;
@@ -324,6 +324,7 @@ aside .coeur{
 #activites figure {  
     border-radius: 40px;
     box-shadow: 2px 6px 5px #f0f0f0;
+    margin-right: 28px;
 }
 #activites img{
     border-radius: 40px 40px 0 0;
@@ -332,12 +333,12 @@ aside .coeur{
     object-fit: cover; /*pour rendre les images claires */
 }
 figcaption{
-    padding:34px;
+    padding:32px;
     font-size: 18px;
     color: #000;
     font-weight: bold;
     padding-left: 25px;/* les légendes en dessous des images*/
-    padding-top: 20px;
+    padding-top: 18px;
 }
 
 /********** Footer, le pied de page ************/
