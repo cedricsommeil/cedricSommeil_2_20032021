@@ -420,7 +420,7 @@ figcaption{
 }
 @media screen and (max-width: 1024px){
 .logo{
-    flex-basis: 0;
+    flex-basis: 37%;
 }  
 #form {
    margin-left: 0;
