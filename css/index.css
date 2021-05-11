@@ -600,7 +600,7 @@ button{
     border: none;/*pour enlever la bordure noir*/
 }
 input[type=search]{
-    width: 70%;
+    width: 74%;
 }
 input[type=submit]{
     display: none;
