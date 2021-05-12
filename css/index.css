@@ -64,8 +64,7 @@ h1 + p{
     margin-top: 10px; /* css avancé , P du meme niveau et qui suit directement le h1*/
 }
 #form{
-    /*ceci est la place de la recherche*/
-    margin-top: 33px;
+    margin-top: 33px; /*c'est la place de recherche*/
 }
 input{
     padding: 17px;
@@ -235,7 +234,7 @@ button{
     color: #D2D0D4!important;
 }
 .afficher:hover{ /*c'est le bouton qui permet plus d'information, et il s'affiche en bleu lorsque 
-    le curseur est dessus avec la propriété hover*/
+                   le curseur est dessus avec la propriété hover*/
     color: #0065FC;
 }
                                 /*Partie Aside les plus populaires */
@@ -371,7 +370,6 @@ a{
    text-decoration: none;
    text-decoration-line: none;/* aucune ligne ne décore le texte*/
 }
-
 @media screen and ( max-width: 1703px){
 .logo{
     flex-basis: 28%;
@@ -403,7 +401,6 @@ h1+p{
    margin-top: 15px;
 }
 #form{  
-  
     margin-top: 40px;
 }
 #area-filters > div {
