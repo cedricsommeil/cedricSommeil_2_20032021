@@ -121,6 +121,7 @@
         order: 3;
         text-align: center;
         border-bottom: 2px solid #0065FC;
+        color: #0065FC;
     }
     .hebergements:hover{
         display: none;
